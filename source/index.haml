@@ -14,7 +14,9 @@ layout: promo
       %a.download{:href => "https://github.com/gitlabhq/gitlabhq"} Download Now
   .grid_6
     .screenshot.code{:style => "overflow:hidden"}
-      %img{:src => "http://blog.gitlabhq.com/images/gitlab_promo.png", :style => "1px solid rgba(255, 255, 255, .2)", :width => "464"}/
+      %img{:src => "http://blog.gitlabhq.com/images/gitlab_promo.png",
+           :style => "1px solid rgba(255, 255, 255, .2)",
+           :width => "464"}/
 / .slider
 #main.clearfix{:role => "main"}
   .grid_6.left
@@ -24,7 +26,9 @@ layout: promo
         %li Setup Linux distro. Ubuntu/Debian OS recommended
         %li
           Visit
-          %a{:href => "https://github.com/gitlabhq/gitlabhq/blob/stable/doc/installation.md", :style => "color:#fff" } this link for setup manual
+          %a{:href => "https://github.com/gitlabhq/gitlabhq/blob/stable/doc/installation.md", :style => "color:#fff" }
+            this link
+          for the setup manual
         %li Follow all steps from manual
         %li Login to GITLAB and add the ssh key to your profile
         %li Create a first project
@@ -120,20 +124,32 @@ layout: promo
   %hr/
   %br
   %div
-    %iframe{ :src => "http://ghbtns.com/github-btn.html?user=gitlabhq&repo=gitlabhq&type=watch&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "115px", :height => "20px"}
-    %iframe{ :src => "http://ghbtns.com/github-btn.html?user=gitlabhq&repo=gitlabhq&type=fork&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "115px", :height => "20px"}
+    %iframe{:src => "http://ghbtns.com/github-btn.html?user=gitlabhq&repo=gitlabhq&type=watch&count=true",
+            :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "115px", :height => "20px"}
+    %iframe{:src => "http://ghbtns.com/github-btn.html?user=gitlabhq&repo=gitlabhq&type=fork&count=true",
+            :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "115px", :height => "20px"}
     %a.twitter-follow-button{"data-show-count" => "false", :href => "https://twitter.com/gitlabhq"} Follow @gitlabhq
     :javascript
-      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      !function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+      }(document, "script", "twitter-wjs");
 
     &nbsp;
     %a.FlattrButton{:href => "http://gitlabhq.com", :rev => "flattr;button:compact;", :style => "display:none;"}
       %noscript
         %a{:href => "http://flattr.com/thing/813163/GITLAB-Self-Hosted-Git-Management-Application", :target => "_blank"}
-          %img{:alt => "Flattr this", :border => "0", :src => "http://api.flattr.com/button/flattr-badge-large.png", :title => "Flattr this"}/
+          %img{:alt => "Flattr this", :title => "Flattr this"}, :border => "0",
+               :src => "http://api.flattr.com/button/flattr-badge-large.png"/
     &nbsp;
     %a{:href => "http://www.pledgie.com/campaigns/17027"}
-      %img{:alt => "Click here to lend your support to: GitLab HQ and make a donation at www.pledgie.com !", :border => "0", :src => "http://www.pledgie.com/campaigns/17027.png?skin_name=chrome"}/
+      %img{:alt => "Click here to lend your support to: GitLab HQ and make a donation at www.pledgie.com !",
+           :border => "0", :src => "http://www.pledgie.com/campaigns/17027.png?skin_name=chrome"}/
 
 :css
   #container {
